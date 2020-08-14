@@ -114,3 +114,14 @@
     
 } 
 
+h2{
+    font-family: Candara , sans-serif;
+    font-weight: bold;
+}
+
+body {
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }

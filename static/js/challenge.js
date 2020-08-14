@@ -175,8 +175,9 @@ function buttonsBlue(){
 
 function buttonsColorReset(){
     for (let i=0; i < all_buttons.length; i++){
+        let copy1=['btn-primary','btn-danger','btn-success','btn-danger','btn-primary','btn-warning','btn-success','btn-danger']
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
-        all_buttons[i].classList.add(copyAllButtons[i]);
+        all_buttons[i].classList.add(copy1[i]);
     }
 }
 
