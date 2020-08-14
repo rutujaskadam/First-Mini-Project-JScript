@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/CSS/style.css">
+    
+    <title>JavaScript Challenge</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2 align="center">Challenge 1: Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div> 
+                <button class="btn btn-primary" onclick="YourAge()"> Click Me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()"> Reset</button>
+            </div>
+        </div>    
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+               
+            </div>
+        </div>
+    </div>   
+
+    <div class="container-2">
+        <h2> Challenge 2: Cat Generator</h2>
+        <div class ="flex-box-container-1">
+            <div> 
+                <button class="btn btn-success"  onclick="gencat()">Generate Pspspspss</button>
+            </div>
+            <div> 
+                <button class="btn btn-danger" onclick="removecat()">Remove the Catss</button>
+            </div> 
+            
+        </div>
+        
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2> Challenge 3: Stone x Paper x Scissors </h2>
+        <div class='flex-box-rps' id="flex-box-rps-div">
+            <img id = "rock" src="stone.png" height=100px width=100px onclick="rpsgame(this)">
+            <img id = "paper" src="paper.jpg" height=100px width=100px onclick="rpsgame(this)">
+            <img id = "scissors" src="scissors.png" height=100px width=100px onclick="rpsgame(this)">
+        </div>
+    </div>
+
+    <div class = "container-4">
+        <h2 id = "change-my-color" > Challenge 4: Button Colour Changer</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="reset">Reset</option>
+                
+                </select>
+            </form>
+
+            <button class='btn btn-primary'>Wee!</button>
+            <button class='btn btn-danger'>Yahoo!</button>
+            <button class='btn btn-warning'>Google</button>
+            <button class='btn btn-success'>Facebook</button>
+
+        </div>
+
+
+    </div>
+    <script src="static/js/challenge.js"></script>
+</html>
